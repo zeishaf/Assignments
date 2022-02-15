@@ -1,0 +1,197 @@
+@import url('https://fonts.google.com/specimen/Ubuntu');
+* 
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial;
+    background-color: pink;
+}
+
+
+section {
+position: relative;
+width: 100%;
+min-height: 100;
+padding: 300;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+/* This is the area to do with Resume and Tabs */
+header {
+    position: fixed;
+    top: 30;
+    left: 10;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+   
+}
+/* This is the Resume top left */
+header .logo {
+    position: relative;
+    color: pink;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 800;
+
+}
+
+header ul {
+    position: relative;
+    display: flex;    
+}
+
+header ul li {
+    list-style: none;
+}
+
+/* This is the tabs menu */
+header ul li a {
+    display: inline-block;
+    color: plum;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 8px 18px;
+    text-decoration: none;
+    user-select: none;
+}
+
+/* This is the tabs menu colors */
+header ul li a .active,
+header ul li a:hover {
+    background: silver;
+    color: white ;
+    border-radius: 30px;
+}
+
+/* This is the full stack text */
+.content {
+    position: relative;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 500px;
+
+}
+
+.content .textBox h2 {
+    color:rgb(209, 77, 117);
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.content .textBox p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: pink;
+    color:rgb(206, 22, 77);
+    font-size: 1.2em;
+    border-radius: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.sci
+{
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* These are the icons for socials */
+
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    position: relative;
+    display: inline block;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    background: rgb(206, 22, 77);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2 ease-in-out;
+}
+.sci li a img {
+  filter: invert(i);
+  transform: scale(0.5);
+}
+
+.sci li a :hover {
+    background-color: palevioletred;
+    transform: translateY(-10px)
+}
+
+.backgroundimage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: fit-content;
+}
+
+.main {
+    flex: 60%;
+    background: rgb(214, 213, 213);
+    padding: 100px;
+    align-content: center
+}
+
+#webimage {
+    text-align: center;
+    height: 20px;
+    margin: 0px 0px;
+    
+}
+
+#nftimage {
+    text-align: center;
+    height: 20px;
+
+    margin: 0px 0px;
+}
+
+.getintouch {
+    padding: 0px;
+    padding: left 50px;
+    text-align: center;
+    background: white
+}
+
+.footer {
+    padding: 15px;
+    font-size: 12px;
+    text-align: center;
+    background: palevioletred;
+    color: white;
+}
+
