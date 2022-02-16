@@ -11,6 +11,14 @@
 </head>
 
 <body>
+    <script>
+        alert(); {
+            let yearOfBirth = prompt("Enter the year you were born");
+            if (yearOfBirth ) {
+                document.getElementById(alert).innerHTML = alert("Wow, " + yearOfBirth + " - What a great year!");
+            }
+        }
+    </script>
     <section>
         <img src="BlackGeoBackground.jpg" class="backgroundimage">
         <header>
@@ -31,24 +39,51 @@
                 <a href="#">Read More</a>
             </div>
         </div>
+
         </br>
         <ul class="sci">
             <li><a href="#"><img src="facebook128.png" alt="facebook" href="http://www.facebook.com/zeishafremaux"></a>
             </li>
             <li><a href="#"><img src="linkedin128.png" alt="linkedin" href="http://www.instagram.com/zeisha"></a></li>
-            <li><a href="#"><img src="instagram128.png" alt="instagram"
-                        href="https://www.linkedin.com/in/zeishafremaux"></a></li>
+            <li><a href="#"><img src="instagram128.png" alt="instagram" href="https://www.linkedin.com/in/zeishafremaux"></a></li>
         </ul>
     </section>
+
+    <div class="greatness">
+        <p>There is only one question at the end of the day... </br>
+            Do you aspire to be great? 
+            <input type="text" id="yourAnswer" placeholder="e.g. yes">
+            <button onclick="checkAnswer()">Submit</button>
+        <p id="feedback"></p>
+        </p>
+    </div>
+    
+    <script>
+        function checkAnswer() {
+            let correctAnswer = "yes";
+            let userAnswer = document.getElementById("yourAnswer").value.toLowerCase();
+            if (userAnswer == correctAnswer) {
+                document.getElementById("feedback").innerHTML = "We are all going to win! ";
+            } else {
+                document.getElementById("feedback").innerHTML = "Work hard and you will see the results, I promise! "
+            }
+        }
+    </script>
 
     <div>
         <div class="main">
             <h2>Full Stack Web Development</h2>
             <p>Front End, Back End & Database Systems Management</p>
+            <br>
+            <br>
             <div class="webimage"><img src="webimage.jpeg" alt="webimage"></div>
-
+        </div>
+        <div>
+            <div class="main2">
             <h2>NFT Collection Design</h2>
             <p>Got a brief? Let's work on that...</p>
+            <br>
+            <br>
             <div class="nftimage"><img src="nftimage.jpeg" alt="nftimage"></div>
         </div>
     </div>

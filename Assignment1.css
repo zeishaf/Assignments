@@ -55,6 +55,7 @@ header ul {
 
 header ul li {
     list-style: none;
+    display: flex;
 }
 
 /* This is the tabs menu */
@@ -68,6 +69,7 @@ header ul li a {
     padding: 8px 18px;
     text-decoration: none;
     user-select: none;
+    display: flex;
 }
 
 /* This is the tabs menu colors */
@@ -76,11 +78,14 @@ header ul li a:hover {
     background: silver;
     color: white ;
     border-radius: 30px;
+    justify-content: center;
+    display: flex;
 }
 
 /* This is the full stack text */
 .content {
     position: relative;
+    display: flex;
 }
 
 .content .textBox {
@@ -100,6 +105,13 @@ header ul li a:hover {
 .content .textBox p {
     font-size: 1.2em;
     color: white;
+}
+
+.greatness {
+    font-size: 20px ;
+    color: black;
+    align-items: center;
+    text-align: center;
 }
 
 .content .textBox a {
@@ -163,20 +175,25 @@ header ul li a:hover {
     flex: 60%;
     background: rgb(214, 213, 213);
     padding: 100px;
-    align-content: center
+    align-content: center;
+}
+
+.main2 {
+    flex: 60%;
+    background-color: rgb(214, 213, 213);
+    padding: 100px;
+    align-content: center;
 }
 
 #webimage {
     text-align: center;
     height: 20px;
     margin: 0px 0px;
-    
 }
 
 #nftimage {
     text-align: center;
     height: 20px;
-
     margin: 0px 0px;
 }
 
@@ -195,3 +212,28 @@ header ul li a:hover {
     color: white;
 }
 
+.navigation {
+    display: flex;
+
+}
+
+@media screen and (max-width= 768px) {
+    header ul, header ul li, header ul li a .active, header ul li a:hover {
+        flex-direction: column;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width =600px) {
+    header ul, header ul li, header ul li a .active, header ul li a:hover {
+        flex-direction: column;
+        font-size: 12px; 
+    }
+}
+
+@media screen and (max-width =375px) {
+    header ul, header ul li, header ul li a .active, header ul li a:hover {
+        flex-direction: column;
+        font-size: 8px;
+    }
+}
